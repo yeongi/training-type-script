@@ -22,10 +22,21 @@ function App() {
     });
   };
 
+  const deleteTodoHandler = (item: Todo) => {
+    todos.find((element, index) => {
+      if (element.id === item.id) {
+        setTodos((prev) => {
+          prev.splice(index, 1);
+          return [...prev];
+        });
+      }
+    });
+  };
+
   return (
     <div>
       <NewTodoForm onAddTodo={addTodoHandler} />
-      <Todos items={todos} />
+      <Todos items={todos} onDelete={deleteTodoHandler} />
     </div>
   );
 }
