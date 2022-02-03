@@ -3,7 +3,7 @@ import classes from "./TodoItem.module.css";
 
 const TodoItem: React.FC<{
   text: string;
-  onClick: (event: React.MouseEvent) => void;
+  onClick: () => void;
 }> = (props) => {
   return (
     <li className={classes.item} onClick={props.onClick}>

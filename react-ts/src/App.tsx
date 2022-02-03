@@ -3,6 +3,7 @@ import "./App.css";
 import NewTodoForm from "./components/NewTodoForm";
 import Todos from "./components/Todos";
 import Todo from "./models/todo";
+import TodosContextProvider from "./store/todos-context";
 
 function App() {
   // const todos = [
@@ -12,31 +13,12 @@ function App() {
   //   new Todo("여자친구 사귀고 슆네.."),
   // ];
 
-  const [todos, setTodos] = useState<Todo[]>([]);
-
-  const addTodoHandler = (text: string) => {
-    const newTodo = new Todo(text);
-
-    setTodos((prev) => {
-      return prev.concat(newTodo);
-    });
-  };
-
-  const deleteTodoHandler = (item: Todo) => {
-    todos.find((element, index) => {
-      if (element.id === item.id) {
-        setTodos((prev) => {
-          prev.splice(index, 1);
-          return [...prev];
-        });
-      }
-    });
-  };
-
   return (
     <div>
-      <NewTodoForm onAddTodo={addTodoHandler} />
-      <Todos items={todos} onDelete={deleteTodoHandler} />
+      <TodosContextProvider>
+        <NewTodoForm />
+        <Todos />
+      </TodosContextProvider>
     </div>
   );
 }
