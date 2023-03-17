@@ -38,10 +38,8 @@ const add = (a, b) => a + b;
 [TS Playground - An online editor for exploring TypeScript and JavaScript](https://www.typescriptlang.org/ko/play)
 
 ### 타입스크립트의 특징
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f9cc5e2-c6fb-4679-969a-350cc0656a5a/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b80ba74-61f5-414e-b200-8e3bda8a4be5/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/225923036-13d9ac4e-b4d3-461b-b9df-0e3d606e3895.png)
+![image](https://user-images.githubusercontent.com/40158148/225923061-78d93f62-f3b6-4a3e-ad85-61c2410ead6c.png)
 
 - 타입스크립트 타임검사기를 통해, 문자열의 길이 속성이 함수가 아니라 숫자라는 지식을 활용해 주석으로 오류 사항을 알려줌
 
