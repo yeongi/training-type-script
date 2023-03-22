@@ -23,7 +23,7 @@ poetLater = {
 
 객체 타입은 객체 리터럴과 유사하게 보이지만 필드 값 대신 타입을 사용해 설명한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da8361ae-b41e-45af-9466-b6e66ce3e4f0/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226813444-46bea41e-696b-4703-971b-69161df5af81.png)
 
 ### 별칭객체 타입
 
@@ -99,7 +99,7 @@ baby = {
 };
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cebbf158-df9e-4755-8905-298645aacdd4/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226813470-999b82ba-2ca2-4e60-a70d-f3dfaa8415dc.png)
 
 객체 타입은 필수 속성 이름과 해당 속성이 예상되는 타입을 모두 지정한다. 객체의 속성이 일치 하지 않으면 타입오류가 발생한다.
 
@@ -225,7 +225,7 @@ if ("pages" in poem) {
 
 만약 `pome.pages` 처럼 객체에 직접 접근해서 판별하려고하면 오류가 발생한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e654b54-5231-438f-9d90-7c48a1be7799/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226813490-f713e0fb-49f2-4a2a-aa5c-395f6d09b85e.png)
 
 **판별된 유니언**
 
