@@ -17,7 +17,7 @@ let isNum = Math.random() > 0.5 ? undefined : 10;
 
 isNum은 undefined 이거나 num 일 수 있다. 위와 같이 ‘이거 혹은 저거’ 와 같은 타입을 유니언 이라고 한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/642b285d-5ca0-4893-8a88-7c6d28cc03bc/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226801709-0803daa8-c355-44d0-9af2-0f1cfdb93754.png)
 
 TS는 가능한 값 또는 구성 요소사이에 | (수직선) 연산자를 사용해 유니언 타입임을 나타낸다.
 
@@ -46,7 +46,7 @@ isNum.toString();
 isNum.toFixed();
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fbe1c9f2-f9e1-4bca-b501-9b4edf56798e/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226801734-c5b9982e-bb44-4638-963e-8118f7b144cc.png)
 
 number | string 타입에서 공통적으로 있는 속성은 toString()은 사용할 수 있지만, toFixed( )는 사용할 수 없다.
 
@@ -122,7 +122,7 @@ const philosopher = "Hysteria";
 
 변수를 `const`로 선언하고 직접 `리터럴 값`을 할당하면 TS는 해당 변수를 할당된 리터럴 값으로 유추함
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd4b866e-08de-422a-a975-c0d1d0959ee6/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226801762-787f4abb-fd1e-4dda-8c00-0d308094ff97.png)
 
 TS코드에 발견할 수 있는 타입
 
@@ -156,7 +156,7 @@ myFreind = "KYM";
 myFreind = "JUY";
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18a17730-60d5-4b3b-b792-6acb5a6958ce/Untitled.png)
+![image](https://user-images.githubusercontent.com/40158148/226801777-9ab7e013-aa52-4ce2-85c2-f57d149deedd.png)
 
 리터럴 타입은 그 값이 해당하는 원시타입에 할당할 수 있다. 모든 특정 문자열은 여전히 string 타입이기 때문이다.
 
